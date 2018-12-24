@@ -6,34 +6,28 @@ namespace SpaceEntity.entity
 {
     public class Island : Continent
     {
-        private string name;
-
-        public string Name { get => name; set => name = value; }
 
         public Island()
         {
         }
 
-        public Island(string name)
+        public Island(string name) : base(name)
         {
-            Name = name;
         }
 
         public override bool Equals(object obj)
         {
-            var island = obj as Island;
-            return island != null &&
-                   Name == island.Name;
+            return base.Equals(obj);
         }
 
         public override int GetHashCode()
         {
-            return HashCode.Combine(Name);
+            return base.GetHashCode();
         }
 
         public override string ToString()
         {
-            return "I'm an island. My name is " + Name;
+            return "I'm an island and my name is " + Name;
         }
     }
 }

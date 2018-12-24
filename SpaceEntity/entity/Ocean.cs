@@ -33,7 +33,7 @@ namespace SpaceEntity.entity
 
         public override string ToString()
         {
-            return "I'm an ocean. My name is " + Name;
+            return "I'm an ocean and my name is " + Name;
         }
     }
 }

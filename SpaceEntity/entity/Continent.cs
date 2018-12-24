@@ -33,7 +33,7 @@ namespace SpaceEntity.entity
 
         public override string ToString()
         {
-            return "I'm a continent. My name is " + Name;
+            return "I'm a continent and my name is " + Name;
         }
     }
 }
